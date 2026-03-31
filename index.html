@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Самостоятельная работа | ОГЭ информатика</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            background: linear-gradient(135deg, #f5f0ff 0%, #e8e0ff 100%);
+            font-family: 'Inter', sans-serif;
+            color: #1e1a2f;
+            line-height: 1.5;
+            padding: 2rem;
+        }
+        .container {
+            max-width: 1000px;
+        }
+        h1 {
+            font-size: 2rem;
+            margin-bottom: 0.5rem;
+            color: #6b4e9e;
+        }
+        .subtitle {
+            color: #5a4a7a;
+            margin-bottom: 2rem;
+            border-bottom: 2px solid #cdb8ff;
+            padding-bottom: 1rem;
+        }
+        .task {
+            margin-bottom: 2.5rem;
+            padding-bottom: 1.5rem;
+            border-bottom: 1px solid #cdb8ff;
+        }
+        .task:last-child {
+            border-bottom: none;
+        }
+        .task-number {
+            font-size: 1.2rem;
+            font-weight: 700;
+            color: #8b5cf6;
+            margin-bottom: 0.8rem;
+        }
+        .task-text {
+            background: white;
+            padding: 1rem;
+            border-left: 4px solid #8b5cf6;
+            border-radius: 0.5rem;
+            font-family: monospace;
+            font-size: 1rem;
+            line-height: 1.5;
+            margin-bottom: 1rem;
+            white-space: pre-wrap;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+        }
+        .task-text p {
+            margin-bottom: 0.5rem;
+        }
+        .task-text code {
+            background: #f0ebff;
+            padding: 0.2rem 0.4rem;
+            border-radius: 0.3rem;
+            color: #6b4e9e;
+        }
+        .download-link {
+            display: inline-block;
+            background: #e9e0ff;
+            border: 1px solid #8b5cf6;
+            color: #6b4e9e;
+            padding: 0.4rem 1rem;
+            border-radius: 2rem;
+            text-decoration: none;
+            font-size: 0.85rem;
+            font-weight: 500;
+            margin-right: 1rem;
+            margin-bottom: 0.8rem;
+            transition: 0.2s;
+        }
+        .download-link:hover {
+            background: #8b5cf6;
+            color: white;
+        }
+        .solution-btn {
+            background: #f0ebff;
+            border: 1px solid #8b5cf6;
+            color: #6b4e9e;
+            padding: 0.4rem 1rem;
+            border-radius: 2rem;
+            cursor: pointer;
+            font-size: 0.85rem;
+            font-weight: 500;
+            transition: 0.2s;
+        }
+        .solution-btn:hover {
+            background: #8b5cf6;
+            color: white;
+        }
+        .solution {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.4s ease-out;
+            margin-top: 0.8rem;
+        }
+        .solution.show {
+            max-height: 500px;
+            transition: max-height 0.5s ease-in;
+        }
+        .video-wrapper {
+            position: relative;
+            padding-bottom: 56.25%;
+            height: 0;
+            overflow: hidden;
+            border-radius: 0.75rem;
+            background: #ddd;
+            margin-bottom: 0.8rem;
+        }
+        .video-wrapper iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+        .answer {
+            background: #f0ebff;
+            padding: 0.8rem;
+            border-radius: 0.5rem;
+            color: #6b4e9e;
+            font-size: 0.9rem;
+        }
+        .answer pre {
+            background: white;
+            padding: 0.5rem;
+            border-radius: 0.5rem;
+            overflow-x: auto;
+            margin-top: 0.5rem;
+            font-family: monospace;
+            font-size: 0.85rem;
+        }
+        .back-link {
+            display: inline-block;
+            color: #8b5cf6;
+            text-decoration: none;
+            margin-bottom: 1.5rem;
+            font-size: 0.9rem;
+        }
+        .back-link:hover {
+            text-decoration: underline;
+        }
+        footer {
+            text-align: left;
+            margin-top: 2rem;
+            padding-top: 1.5rem;
+            border-top: 1px solid #cdb8ff;
+            color: #8b7aa8;
+            font-size: 0.85rem;
+        }
+        hr {
+            border: none;
+            height: 1px;
+            background: #cdb8ff;
+            margin: 1rem 0;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <a href="index.html" class="back-link">← На главную</a>
+    <h1>📝 Задания 11 для самостоятельной работы</h1>
+    <div class="subtitle">Здесь представлены различные 11 задания для тренировки. Файлы, необходимые для выполнения, доступны для скачивания — под каждым заданием. Если вы хотите проверить свое решение или затрудняетесь в решении, то можно воспользоваться видеоразбором, которое можно открыть по кнопке после каждого задания.</div>
+
+    <!-- ЗАДАНИЕ 1 -->
+    <div class="task">
+        <div class="task-number">Задание 1</div>
+        <div class="task-text">
+            В одном из произведений <b>А.С. Пушкина</b>, текст которого приведён в подкаталоге каталога <b>Проза</b>, есть персонаж по фамилии Берестов. С помощью поисковых средств операционной системы и текстового редактора или браузера выясните, как называется имение, в котором живёт этот человек.
+        </div>
+        <a href="files/zadanie12_files.zip" class="download-link" download>📎 Скачать файлы для задания 1</a>
+        <button class="solution-btn" data-target="sol12">🎬 Показать решение</button>
+        <div id="sol12" class="solution">
+            <div class="video-wrapper">
+                <iframe src="https://vk.com/video_ext.php?oid=-123456789&id=VIDEO_ID_12&hd=2" allow="autoplay; encrypted-media; fullscreen; picture-in-picture;" frameborder="0" allowfullscreen></iframe>
+            </div>
+        </div>
+    </div>
+    <!-- ЗАДАНИЕ 2 -->
+    <div class="task">
+        <div class="task-number">Задание 2</div>
+        <div class="task-text">В одном из произведений <b>Н.В. Гоголя</b>, текст которого приведён в подкаталоге каталога <b>Проза</b>, есть герой с фамилией Ковалев. С помощью поисковых средств операционной системы и текстового редактора или браузера выясните чин государственной службы этого героя.
+            
+        </div>
+        <a href="files/zadanie12_files.zip" class="download-link" download>📎 Скачать файлы для задания 2</a>
+        <button class="solution-btn" data-target="sol12">🎬 Показать решение</button>
+        <div id="sol12" class="solution">
+            <div class="video-wrapper">
+                <iframe src="https://vk.com/video_ext.php?oid=-123456789&id=VIDEO_ID_12&hd=2" allow="autoplay; encrypted-media; fullscreen; picture-in-picture;" frameborder="0" allowfullscreen></iframe>
+            </div>
+        </div>
+    </div>
+    <!-- ЗАДАНИЕ 3 -->
+    <div class="task">
+        <div class="task-number">Задание 3</div>
+        <div class="task-text">В одном из произведений <b>А.П. Чехова</b>, текст которого приведён в подкаталоге каталога <b>Проза</b>, есть героиня по прозвищу Печончиха. С помощью поисковых средств операционной системы и текстового редактора или браузера выясните имя этой женщины.
+            
+        </div>
+        <a href="files/zadanie12_files.zip" class="download-link" download>📎 Скачать файлы для задания 3</a>
+        <button class="solution-btn" data-target="sol12">🎬 Показать решение</button>
+        <div id="sol12" class="solution">
+            <div class="video-wrapper">
+                <iframe src="https://vk.com/video_ext.php?oid=-123456789&id=VIDEO_ID_12&hd=2" allow="autoplay; encrypted-media; fullscreen; picture-in-picture;" frameborder="0" allowfullscreen></iframe>
+            </div>
+        </div>
+    </div>
+    <!-- ЗАДАНИЕ 4 -->
+    <div class="task">
+        <div class="task-number">Задание 4</div>
+        <div class="task-text">В одном из произведений <b>Ф.М. Достоевского</b>, текст которого приведён в подкаталоге каталога <b>Проза</b>, есть герой с фамилией Мармеладов. С помощью поисковых средств операционной системы и текстового редактора или браузера выясните имя дочери Мармеладова.
+            
+        </div>
+        <a href="files/zadanie12_files.zip" class="download-link" download>📎 Скачать файлы для задания 4</a>
+        <button class="solution-btn" data-target="sol12">🎬 Показать решение</button>
+        <div id="sol12" class="solution">
+            <div class="video-wrapper">
+                <iframe src="https://vk.com/video_ext.php?oid=-123456789&id=VIDEO_ID_12&hd=2" allow="autoplay; encrypted-media; fullscreen; picture-in-picture;" frameborder="0" allowfullscreen></iframe>
+            </div>
+        </div>
+    </div>
+    <!-- ЗАДАНИЕ 5 -->
+    <div class="task">
+        <div class="task-number">Задание 5</div>
+        <div class="task-text">В одном из произведений <b>А.С. Пушкина</b>, текст которого приведён в подкаталоге каталога <b>Проза</b>, упоминается некий граф Пронский. С помощью поисковых средств операционной системы и текстового редактора или браузера выясните фамилию персонажа произведения, близкого родственника графа Пронского.
+        </div>
+        <a href="files/zadanie12_files.zip" class="download-link" download>📎 Скачать файлы для задания 5</a>
+        <button class="solution-btn" data-target="sol12">🎬 Показать решение</button>
+        <div id="sol12" class="solution">
+            <div class="video-wrapper">
+                <iframe src="https://vk.com/video_ext.php?oid=-123456789&id=VIDEO_ID_12&hd=2" allow="autoplay; encrypted-media; fullscreen; picture-in-picture;" frameborder="0" allowfullscreen></iframe>
+            </div>
+        </div>
+    </div>
+    <!-- ЗАДАНИЕ 6 -->
+    <div class="task">
+        <div class="task-number">Задание 6</div>
+        <div class="task-text">В одном из произведений <b>Н.В. Гоголя</b>, текст которого приведён в подкаталоге каталога <b>Проза</b>, у одного из персонажей есть служанка по имени Мавра, которую он называет «разбойницей». С помощью поисковых средств операционной системы и текстового редактора или браузера выясните фамилию этого персонажа.
+        </div>
+        <a href="files/zadanie12_files.zip" class="download-link" download>📎 Скачать файлы для задания 6</a>
+        <button class="solution-btn" data-target="sol12">🎬 Показать решение</button>
+        <div id="sol12" class="solution">
+            <div class="video-wrapper">
+                <iframe src="https://vk.com/video_ext.php?oid=-123456789&id=VIDEO_ID_12&hd=2" allow="autoplay; encrypted-media; fullscreen; picture-in-picture;" frameborder="0" allowfullscreen></iframe>
+            </div>
+        </div>
+    </div>
+    <!-- ЗАДАНИЕ 7 -->
+    <div class="task">
+        <div class="task-number">Задание 7</div>
+        <div class="task-text">В одном из произведений <b>А.П. Чехова</b>, текст которого приведён в подкаталоге каталога <b>Проза</b>, присутствует эпизод, в котором девица Подзатылкина в доме своих почтенных родителей была объявлена невестой. С помощью поисковых средств операционной системы и текстового редактора выясните фамилию жениха.
+        </div>
+        <a href="files/zadanie12_files.zip" class="download-link" download>📎 Скачать файлы для задания 7</a>
+        <button class="solution-btn" data-target="sol12">🎬 Показать решение</button>
+        <div id="sol12" class="solution">
+            <div class="video-wrapper">
+                <iframe src="https://vk.com/video_ext.php?oid=-123456789&id=VIDEO_ID_12&hd=2" allow="autoplay; encrypted-media; fullscreen; picture-in-picture;" frameborder="0" allowfullscreen></iframe>
+            </div>
+        </div>
+    </div>
+    <!-- ЗАДАНИЕ 8 -->
+    <div class="task">
+        <div class="task-number">Задание 8</div>
+        <div class="task-text">В одном из произведений <b>А.П. Чехова</b>, текст которого приведён в подкаталоге каталога <b>Проза</b>, есть герой по фамилии Родэ. С помощью поисковых средств операционной системы и текстового редактора или браузера выясните чин (звание) Родэ.
+        </div>
+        <a href="files/zadanie12_files.zip" class="download-link" download>📎 Скачать файлы для задания 8</a>
+        <button class="solution-btn" data-target="sol12">🎬 Показать решение</button>
+        <div id="sol12" class="solution">
+            <div class="video-wrapper">
+                <iframe src="https://vk.com/video_ext.php?oid=-123456789&id=VIDEO_ID_12&hd=2" allow="autoplay; encrypted-media; fullscreen; picture-in-picture;" frameborder="0" allowfullscreen></iframe>
+            </div>
+        </div>
+    </div>
+    <!-- ЗАДАНИЕ 9 -->
+    <div class="task">
+        <div class="task-number">Задание 9</div>
+        <div class="task-text">В одном из произведений <b>Н.В. Гоголя</b>, текст которого приведён в подкаталоге каталога <b>Проза</b>, главный герой играет с одним из персонажей в шашки. С помощью поисковых средств операционной системы и текстового редактора или браузера выясните фамилию соперника главного героя по шашечной партии.
+        </div>
+        <a href="files/zadanie12_files.zip" class="download-link" download>📎 Скачать файлы для задания 9</a>
+        <button class="solution-btn" data-target="sol12">🎬 Показать решение</button>
+        <div id="sol12" class="solution">
+            <div class="video-wrapper">
+                <iframe src="https://vk.com/video_ext.php?oid=-123456789&id=VIDEO_ID_12&hd=2" allow="autoplay; encrypted-media; fullscreen; picture-in-picture;" frameborder="0" allowfullscreen></iframe>
+            </div>
+        </div>
+    </div>
+    <!-- ЗАДАНИЕ 10 -->
+    <div class="task">
+        <div class="task-number">Задание 10</div>
+        <div class="task-text">В одном из произведений <b>А.С. Пушкина</b>, текст которого приведён в подкаталоге каталога <b>Проза</b>, упоминается некая Курочкина. С помощью поисковых средств операционной системы и текстового редактора или браузера выясните её имя.
+        </div>
+        <a href="files/zadanie12_files.zip" class="download-link" download>📎 Скачать файлы для задания 10</a>
+        <button class="solution-btn" data-target="sol12">🎬 Показать решение</button>
+        <div id="sol12" class="solution">
+            <div class="video-wrapper">
+                <iframe src="https://vk.com/video_ext.php?oid=-123456789&id=VIDEO_ID_12&hd=2" allow="autoplay; encrypted-media; fullscreen; picture-in-picture;" frameborder="0" allowfullscreen></iframe>
+            </div>
+        </div>
+    </div>
+    <!-- ЗАДАНИЕ 11 -->
+    <div class="task">
+        <div class="task-number">Задание 11</div>
+        <div class="task-text">В одном из произведений <b>А.С. Пушкина</b>, текст которого приведён в подкаталоге каталога <b>Проза</b>, рассказывается о том, что для героини заказали «пару лаптей». С помощью поисковых средств операционной системы и текстового редактора выясните имя мастера, у которого заказали лапти для героини.
+        </div>
+        <a href="files/zadanie12_files.zip" class="download-link" download>📎 Скачать файлы для задания 11</a>
+        <button class="solution-btn" data-target="sol12">🎬 Показать решение</button>
+        <div id="sol12" class="solution">
+            <div class="video-wrapper">
+                <iframe src="https://vk.com/video_ext.php?oid=-123456789&id=VIDEO_ID_12&hd=2" allow="autoplay; encrypted-media; fullscreen; picture-in-picture;" frameborder="0" allowfullscreen></iframe>
+            </div>
+        </div>
+    </div>
+    <!-- ЗАДАНИЕ 12 -->
+    <div class="task">
+        <div class="task-number">Задание 12</div>
+        <div class="task-text">В одном из произведений <b>А.С. Пушкина</b>, текст которого приведён в подкаталоге каталога <b>Проза</b>, есть персонаж попадья Федотовна. С помощью поисковых средств операционной системы и текстового редактора или браузера выясните название этого произведения
+        </div>
+        <a href="files/zadanie12_files.zip" class="download-link" download>📎 Скачать файлы для задания 12</a>
+        <button class="solution-btn" data-target="sol12">🎬 Показать решение</button>
+        <div id="sol12" class="solution">
+            <div class="video-wrapper">
+                <iframe src="https://vk.com/video_ext.php?oid=-123456789&id=VIDEO_ID_12&hd=2" allow="autoplay; encrypted-media; fullscreen; picture-in-picture;" frameborder="0" allowfullscreen></iframe>
+            </div>
+        </div>
+    </div>
+    <!-- ЗАДАНИЕ 13 -->
+    <div class="task">
+        <div class="task-number">Задание 13</div>
+        <div class="task-text">В одном из произведений <b>Н.В. Гоголя</b>, текст которого приведён в подкаталоге каталога <b>Проза</b>, в одном из эпизодов рассказывается о членах одной семьи, которые предпочитали носить исключительно сапоги, меняя подметки три раза в год. С помощью поисковых средств операционной системы и текстового редактора определите фамилию главы этой семьи.
+        </div>
+        <a href="files/zadanie12_files.zip" class="download-link" download>📎 Скачать файлы для задания 13</a>
+        <button class="solution-btn" data-target="sol12">🎬 Показать решение</button>
+        <div id="sol12" class="solution">
+            <div class="video-wrapper">
+                <iframe src="https://vk.com/video_ext.php?oid=-123456789&id=VIDEO_ID_12&hd=2" allow="autoplay; encrypted-media; fullscreen; picture-in-picture;" frameborder="0" allowfullscreen></iframe>
+            </div>
+        </div>
+    </div>
+    <!-- ЗАДАНИЕ 14 -->
+    <div class="task">
+        <div class="task-number">Задание 14</div>
+        <div class="task-text">В одном из произведений <b>А.П. Чехова</b>, текст которого приведён в подкаталоге каталога <b>Проза</b>, есть герой с фамилией Елдырин. С помощью поисковых средств операционной системы и текстового редактора или браузера выясните должность этого героя.
+        </div>
+        <a href="files/zadanie12_files.zip" class="download-link" download>📎 Скачать файлы для задания 14</a>
+        <button class="solution-btn" data-target="sol12">🎬 Показать решение</button>
+        <div id="sol12" class="solution">
+            <div class="video-wrapper">
+                <iframe src="https://vk.com/video_ext.php?oid=-123456789&id=VIDEO_ID_12&hd=2" allow="autoplay; encrypted-media; fullscreen; picture-in-picture;" frameborder="0" allowfullscreen></iframe>
+            </div>
+        </div>
+    </div>
+    <!-- ЗАДАНИЕ 15 -->
+    <div class="task">
+        <div class="task-number">Задание 15</div>
+        <div class="task-text">В одном из произведений <b>М.Ю. Лермонтова</b>, текст которого приведён в подкаталоге каталога <b>Проза</b>, упоминается о Койшаурской долине. С помощью поисковых средств операционной системы и текстового редактора определите город, из которого был родом русский извозчик, первым спустившийся на повозке по дороге между пропастью и утёсом.
+        </div>
+        <a href="files/zadanie12_files.zip" class="download-link" download>📎 Скачать файлы для задания 15</a>
+        <button class="solution-btn" data-target="sol12">🎬 Показать решение</button>
+        <div id="sol12" class="solution">
+            <div class="video-wrapper">
+                <iframe src="https://vk.com/video_ext.php?oid=-123456789&id=VIDEO_ID_12&hd=2" allow="autoplay; encrypted-media; fullscreen; picture-in-picture;" frameborder="0" allowfullscreen></iframe>
+            </div>
+        </div>
+    </div>
+    <!-- ЗАДАНИЕ 16 -->
+    <div class="task">
+        <div class="task-number">Задание 16</div>
+        <div class="task-text">В одном из произведений <b>А.С. Пушкина</b>, текст которого приведён в подкаталоге каталога <b>Проза</b>, служанка вместо слова «доктор» использует слово «дохтур». С помощью поисковых средств операционной системы и текстового редактора или браузера выясните имя её собеседницы.
+        </div>
+        <a href="files/zadanie12_files.zip" class="download-link" download>📎 Скачать файлы для задания 16</a>
+        <button class="solution-btn" data-target="sol12">🎬 Показать решение</button>
+        <div id="sol12" class="solution">
+            <div class="video-wrapper">
+                <iframe src="https://vk.com/video_ext.php?oid=-123456789&id=VIDEO_ID_12&hd=2" allow="autoplay; encrypted-media; fullscreen; picture-in-picture;" frameborder="0" allowfullscreen></iframe>
+            </div>
+        </div>
+    </div>
+    <!-- ЗАДАНИЕ 17 -->
+    <div class="task">
+        <div class="task-number">Задание 17</div>
+        <div class="task-text">В одном из произведений <b>А.П. Чехова</b>, текст которого приведён в подкаталоге каталога <b>Проза</b>, присутствует эпизод, в котором один из героев послал в «Ниву» статью «Интересный случай многоплодия среди крестьянского народонаселения». С помощью поисковых средств операционной системы и текстового редактора выясните фамилию этого героя.
+        </div>
+        <a href="files/zadanie12_files.zip" class="download-link" download>📎 Скачать файлы для задания 17</a>
+        <button class="solution-btn" data-target="sol12">🎬 Показать решение</button>
+        <div id="sol12" class="solution">
+            <div class="video-wrapper">
+                <iframe src="https://vk.com/video_ext.php?oid=-123456789&id=VIDEO_ID_12&hd=2" allow="autoplay; encrypted-media; fullscreen; picture-in-picture;" frameborder="0" allowfullscreen></iframe>
+            </div>
+        </div>
+    </div>
+</div>
+<footer>
+    <p>КодОГЭ — подготовка к экзамену</p>
+</footer>
+
+<script>
+    document.querySelectorAll('.solution-btn').forEach(btn => {
+        btn.addEventListener('click', function() {
+            const target = document.getElementById(this.dataset.target);
+            if (target) {
+                target.classList.toggle('show');
+                this.textContent = target.classList.contains('show') ? '🎬 Скрыть решение' : '🎬 Показать решение';
+            }
+        });
+    });
+</script>
+</body>
+</html>
