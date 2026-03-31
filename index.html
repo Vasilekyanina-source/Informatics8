@@ -121,13 +121,13 @@
             background: #ddd;
             margin-bottom: 0.8rem;
         }
-        .video-wrapper iframe {
+        .video-wrapper video {
             position: absolute;
             top: 0;
             left: 0;
             width: 100%;
             height: 100%;
-            border: none;
+            object-fit: contain; /* вместо cover, чтобы видео не обрезалось */
         }
         .answer {
             background: #f0ebff;
@@ -187,7 +187,9 @@
         <button class="solution-btn" data-target="sol1">🎬 Показать решение</button>
         <div id="sol1" class="solution">
             <div class="video-wrapper">
-                <iframe src="1.mp4" allowfullscreen></iframe>
+                <video controls>
+                    <sourse src="1.mp4" type="video/mp4">
+                </video>
             </div>
         </div>
     </div>
